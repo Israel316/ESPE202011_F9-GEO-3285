@@ -3,14 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hw07menu;
-
+package ws07menu;
 import java.util.Scanner;
 /**
  *
  * @author HP
  */
-public class HW07MENU {
+public class WS07Menu {
 
     /**
      * @param args the command line arguments
@@ -69,4 +68,4 @@ public class HW07MENU {
     }
 
 }
-    
+   
