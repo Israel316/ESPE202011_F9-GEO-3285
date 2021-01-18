@@ -24,9 +24,9 @@ public class HW04MENU {
     
     do{
         System.out.println("===Calculator of quadrilaterals===");
-        System.out.println("1. ->area of ​​a square ");
-        System.out.println("2. ->area of ​​a triangle ");
-        System.out.println("3. ->area of ​​a rectangle");
+        System.out.println("1. ->area of ​​a Trapeze ");
+        System.out.println("2. ->area of ​​a square");
+        System.out.println("3. ->area of ​​a rhombus ");
         System.out.println("4. ->Exit");
     
     System.out.println("Enter your menu option --> ");
