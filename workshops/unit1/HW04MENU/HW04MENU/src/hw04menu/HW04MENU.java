@@ -3,54 +3,56 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws07menu;
+package hw04menu;
 import java.util.Scanner;
 /**
  *
  * @author HP
  */
-public class WS07Menu {
+public class HW04MENU {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner (System.in);
         boolean mainLoop = true;
         int option;
 
         do {
             System.out.println(" ========= Calculator =======");
-            System.out.println("1. -> combo1");
-            System.out.println("2. -> combo 2");
-            System.out.println("3. -> combo 3");
-            System.out.println("4. -> Division");
-            System.out.println("5. -> Exit");
+            System.out.println("1. -> trapeze");
+            System.out.println("2. -> rhombus");
+            System.out.println("3. -> square");
+            System.out.println("4. -> exit");
+          
 
             System.out.println("Enter your menu option --> ");
             option = input.nextInt();
 
             switch (option) {
- case 1:
+
+                case 1:
                     int addend1;
                     int addend2;
-                    int sum;
+                    int addend3 = 0;
+                    int mult;
                     System.out.println("enter addend 1 -> ");
                     addend1 = input.nextInt();
                     System.out.println("enter addend 2 -> ");
                     addend2 = input.nextInt();
-                    sum = addend1 + addend2;
-                    System.out.println(" the sum is --> " + sum);
+                    mult = (addend1 + addend2)/addend3;
+                    System.out.println(" the sum is --> " + mult);
                     break;
                 case 2:
-                    System.out.println("The subtraction is");
+                    System.out.println("Area of trapeze is");
                     break;
                 case 3:
-                    System.out.println("The multiplcation is");
+                    System.out.println("Area de rhombus is");
                     break;
                 case 4:
-                    System.out.println("The division is");
+                    System.out.println("Area of square");
                     break;
                 case 5:
                     System.out.println("Good Bye my friend");
@@ -67,3 +69,5 @@ public class WS07Menu {
     }
 
 }
+    
+
