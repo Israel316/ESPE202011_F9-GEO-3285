@@ -3,21 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package funtionandrecursion;
+package funtionsandrecursion;
 
 /**
  *
  * @author HP
  */
-public class FuntionandRecursion {
+public class WS10Funtions {
 
     /**
      * @param args the command line arguments
      */
+    public static void main(String[] args) {
         // TODO code application logic here
-         public static void main(String[] args) {
-
-        int divd = 5;
+         int divd = 5;
         int divr = 10;
         float quotient = 0;
         int x = 0;
@@ -86,4 +85,6 @@ public class FuntionandRecursion {
         }
     }
 
+}
+ 
 }
