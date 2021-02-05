@@ -23,7 +23,7 @@ public class Hw09EmbeddedStructures {
         int top = 12;
         int product2 = 0;
         int product3;
-        int module;
+        int showModule;
         float quotient = 0;
         int multiplier1 = 1;
         int multiplier2 = 1;
@@ -50,8 +50,8 @@ public class Hw09EmbeddedStructures {
                 } else {
 
                     if (operand1 % 7 == 0 && operand2 % 7 == 0) {
-                        module = operand1 % operand2;
-                        System.out.println(" The modul is " + module);
+                        showModule = operand1 % operand2;
+                        System.out.println(" The modul is " + showModule);
                     } else {
 
                         if (operand1 % 11 == 0 && operand2 % 11 == 0) {

@@ -36,16 +36,16 @@ public class HW10Funtions {
     
     System.out.println("  ****Write the first number****");
     Number1=input.nextInt (); 
-    Number2 = f(Number1);
+    Number2 = computeSquare(Number1);
     System.out.println("Number2 value: " + Number1 + " ^2-->" + Number2);
     
     System.out.println("   ****Write the first number****  ");
     Number1=input.nextInt ();     
-    Number2 = f(Number1);
+    Number2 = computeSquare(Number1);
     System.out.println("Number2 : " + Number1 + " ^2-->" + Number2);    
     System.out.println("  ****Write the first number**** ");
     Number1=input.nextInt ();
-    Number2 = f(Number1);
+    Number2 = computeSquare(Number1);
     System.out.println("the number square of -> " + Number1 + " <- = -> " + Number2);
       
     System.out.println(" ****Write the first number****");
@@ -65,7 +65,7 @@ public class HW10Funtions {
     System.out.println(+ table + " * " + j + " = " + product);
     }
 
-     System.out.println("     Take care and come back     "); 
+     System.out.println("  **** Take care and come back****     "); 
  
     
     }
@@ -82,7 +82,7 @@ public class HW10Funtions {
         return quotient;
     }
 
-    public static int f(int Number1) {
+    public static int computeSquare(int Number1) {
         
         int Number2 = 0;
         Number2 = Number1 * Number1;
@@ -90,14 +90,14 @@ public class HW10Funtions {
         return Number2;
     }
 
-    public static int g(int number1) {
+    public static int computeParabola(int number1) {
      
         int number2 = 0;
         number2 = number1 * number1 + 2 * number1 + 1;
 
         return number2;
     }
-     public static int tablemulriplication() {   
+     public static int showTheMultiplicationTable() {   
   
     System.out.println("The multiplication tables: ");
    
