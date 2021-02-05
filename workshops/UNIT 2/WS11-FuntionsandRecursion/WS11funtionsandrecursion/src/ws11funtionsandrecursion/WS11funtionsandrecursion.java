@@ -3,26 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package funciones;
+package ws11funtionsandrecursion;
+
 import java.util.Scanner;
+
 /**
  *
  * @author HP
  */
-public class WS11FuntionsandRecursions {
+public class WS11funtionsandrecursion {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-      int operand1;
+        int operand1;
         int operand2;
         int showAddition;
         int showMultiplication;
         int top = 12;
-        int showMultiplicationTables = 0;
-        int product3;
+        int product2 = 0;
+        int showMultiplicationTables;
         int showModule;
         float showDivisions = 0;
         int multiplier1 = 1;
@@ -60,8 +62,8 @@ public class WS11FuntionsandRecursions {
                                 System.out.println(" the table of --> " + operand1 + " <-- ");
 
                                 for (int i = 1; multiplier1 <= top; multiplier1++) {
-                                    showMultiplicationTables = operand1 * multiplier1;
-                                    System.out.println(operand1 + " x " + multiplier1 + " = " + showMultiplicationTables);
+                                    product2 = operand1 * multiplier1;
+                                    System.out.println(operand1 + " x " + multiplier1 + " = " + product2);
                                 }
                             }
                         }
@@ -73,8 +75,8 @@ public class WS11FuntionsandRecursions {
                                 System.out.println(" the table of --> " + operand2 + " <-- ");
 
                                 for (int i = 1; multiplier2 <= top; multiplier2++) {
-                                    product3 = operand2 * multiplier2;
-                                    System.out.println(operand2 + " x " + multiplier2 + " = " + product3);
+                                    showMultiplicationTables = operand2 * multiplier2;
+                                    System.out.println(operand2 + " x " + multiplier2 + " = " + showMultiplicationTables);
                                 }
                             }
 
@@ -96,6 +98,10 @@ public class WS11FuntionsandRecursions {
         } while (operand1 > 0);
     }
 }
+    }
+    
+}
+
     }
     
 }
