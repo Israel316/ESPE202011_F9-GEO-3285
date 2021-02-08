@@ -11,11 +11,7 @@ package funtionandrecursion;
  */
 class objfact {
 
-    static String Factorialcycle(int number1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    static String RecursiveFactorial(int number2) {
+    static String InteractiveSum(int number4) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -23,7 +19,11 @@ class objfact {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    static String InteractiveSum(int number4) {
+    static String RecursiveFactorial(int number2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    static String Factorialcycle(int number1) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

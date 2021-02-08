@@ -57,7 +57,7 @@ System.out.println("pyramid");
     System.out.println("java recursion example ");
     pyramid(8, "", "");
 System.out.println("factorial");
-    System.out.println("The factorial of " + number5 + " it is--> "+Factorial(number5));
+    System.out.println("The factorial of " + number5 + " it is--> "+factorial(number5));
  System.out.println("Thank you come back soon"); 
    }
 
@@ -72,7 +72,7 @@ if (number2 < 0){
 }
 }
 }
-public int Factorialcycle(int number1){
+public int factorialseries(int number1){
   int factor = 1;
     if (number1 < 0){
   return 0;
@@ -104,7 +104,7 @@ public static void pyramid(int numero, String CadenaInicial, String CadenaActual
      pyramid(numero, CadenaInicial, CadenaActual);
         }
     }
-public static int Factorial (int number5) {
+public static int factorial (int number5) {
   int factorial = 1; 
    for (int i = 1; i <= number5; i++) {
    factorial = factorial + i;
@@ -114,4 +114,3 @@ public static int Factorial (int number5) {
 }
     
     
-}
