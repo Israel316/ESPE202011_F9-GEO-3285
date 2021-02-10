@@ -23,9 +23,7 @@ public class FactorialNumber {
         
                 do{
             
-         System.out.println("ENTER A NUMBER EQUAL TO FACTORIAL: ");
-         System.out.println("NEGATIVE NUMBERS to exit  --> ");
-         System.out.println("NUMBER GREATER THAN 15 EQUALS ERROR--> to exit  ");
+            showMenuFactorial();
          
          Scanner input=new Scanner (System.in);
          number=input.nextInt();
@@ -42,6 +40,12 @@ public class FactorialNumber {
     number  = -0;
     System.out.println("good bye");
 } 
+
+    private static void showMenuFactorial() {
+        System.out.println("ENTER A NUMBER EQUAL TO FACTORIAL: ");
+        System.out.println("NEGATIVE NUMBERS to exit  --> ");
+        System.out.println("NUMBER GREATER THAN 15 EQUALS ERROR--> to exit  ");
+    }
 
 }
     

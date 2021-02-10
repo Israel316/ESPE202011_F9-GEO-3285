@@ -18,99 +18,115 @@ public class FUNTIONandRecursion {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-System.out.println("Santiago Arteaga");
-    Scanner scanner = new Scanner (System.in);
-    Scanner leer = new Scanner (System.in);
-      int number1;
-      int number2;
-      int number3;
-      int number4;   
-      int number5;
-      
-    System.out.print("Enter the number1-->"); 
-    number1 = scanner.nextInt (); 
-    scanner.nextLine(); 
-    System.out.print("Enter the number2-->"); 
-    number2 = scanner.nextInt (); 
-    scanner.nextLine();
-    System.out.print("Enter the number3-->"); 
-    number3 = scanner.nextInt (); 
-    scanner.nextLine(); 
-    System.out.print("Enter the number4-->"); 
-    number4 = scanner.nextInt (); 
-    scanner.nextLine();
-    System.out.println("Enter the number5-->");  
-    number5 = scanner.nextInt (); 
-    scanner.nextLine();
-    
-System.out.println("factorialserires");
-        FUNTIONandRecursion FUNTIONandRecursionobjfact = new FUNTIONandRecursion();
-    System.out.println("The factorial of a number " + number1 + " using the recursive method-->" + objfact.Factorialcycle(number1));
-System.out.println("Recursive Factorial");
-    System.out.println("The factorial of a number " + number2 + " using the recursive method-->" + objfact.RecursiveFactorial(number2)); 
-System.out.println("Recursive Sum ");
-    System.out.println("The factorial of a number " + number3 + " using the recursive method-->" + objfact.RecursiveSum(number3));  
-System.out.println(" Interactive Sum ");
-    System.out.println("The factorial of a number " + number4 + " using the recursive method-->" + objfact.InteractiveSum(number4));
-System.out.println("pyramid");
-    System.out.println("java recursion example ");
-    pyramid(8, "", "");
-System.out.println("factorial");
-    System.out.println("The factorial of " + number5 + " it is--> "+factorial(number5));
- System.out.println("Thank you come back soon"); 
-   }
+Scanner input = new Scanner(System.in);
+        boolean mainLoop = true;
+        int option;
 
-public static int RecursiveFactorial(int number2){
-if (number2 < 0){
-    return 0;
-}else{
-    if (number2 == 0){
- return 1;
-}else{
- return number2 * RecursiveFactorial(number2-1);
-}
-}
-}
-public int factorialseries(int number1){
-  int factor = 1;
-    if (number1 < 0){
-  return 0;
-}else{
-   while (number1 != 0){
-   factor = number1 * factor;
-   number1--;
-}
-  return factor;
-}
-}
-public static int RecursiveSum(int number3){
-   return (number3<=0)?0:number3 + RecursiveSum(number3-1);
-}
+             do {
+            System.out.println(" *****Santiago Arteaga****");
+            System.out.println("1. ->  Perimeter  ");
+            System.out.println("2. -> Area of terrain  ");
+            System.out.println("3. ->  Magnitude of seismic movement  ");
+            System.out.println("4. ->  Tidal Range ");
+            System.out.println("5. -> :( Exit :( ");
 
-public static int InteractiveSum(int number4){
-  int result= 0;
-   for(int i=1; i<=number4; i++){
-   result +=i;
-}
-  return result;
-}
-public static void pyramid(int numero, String CadenaInicial, String CadenaActual){
-   if (CadenaActual.length() == numero) {
-     System.out.println(""+ CadenaActual);
-}else{
-     System.out.println(""+CadenaActual);
-     CadenaActual = CadenaActual.concat(CadenaInicial);
-     pyramid(numero, CadenaInicial, CadenaActual);
-        }
+            System.out.println("Enter your menu option --> ");
+            option = input.nextInt();
+
+            switch (option) {
+
+                case 1:
+                   
+                    double perimeter = countPerimeter(input);
+                    
+                    System.out.println(" Perimeter  --> " + perimeter);
+                    break;
+                
+                case 2:
+                    
+                    double area = countArea(input);
+                    
+                    System.out.println(" Area of terrain -->" + area);
+                    break;
+               
+                case 3:
+                    
+                    float magnitude = countMagnitude(input);
+                    
+                    System.out.println(" Magnitude of of seismic movement " + 
+                            magnitude);
+                    break;                                  
+               
+                case 4:
+                    
+                    float amplitude1 = countOceanWave(input);
+                    
+                    System.out.println(" Tidal Range " + amplitude1);
+                    break;
+               
+                case 5:
+                    
+                    System.out.println(" thank good bye ");
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid option\n\n\n");
+                    break;                                         
+            }
+        } while (option != 5);
     }
-public static int factorial (int number5) {
-  int factorial = 1; 
-   for (int i = 1; i <= number5; i++) {
-   factorial = factorial + i;
-   }
-   return factorial;
-}
-}
+
+    private static float countOceanWave(Scanner input) {
+        float maximum;
+        float minimun;
+        float scope1;
+        System.out.println(" Tallheight -> ");
+        maximum = input.nextFloat();
+        System.out.println(" Lowheight -> ");
+        minimun = input.nextFloat();
+        scope1= maximum - minimun;
+        return scope1;
+    }
+
+    private static float countMagnitude(Scanner input) {
+        float scope;
+        float timechange;
+        float magnitude;
+        System.out.println(" Amplitude -> ");
+        scope = input.nextFloat();
+        System.out.println(" Time of varation -> ");
+        timechange = input.nextFloat();
+        magnitude = (float)(Math.log10(scope)+
+                3 * Math.log10(8 * timechange)-2.85);
+        return magnitude;
+    }
+
+    private static double countArea(Scanner input) {
+        double equalLengths;
+        double wide;
+        double area;
+        System.out.println(" Enter distances -> ");
+        equalLengths = input.nextFloat();
+        System.out.println(" Enter Bandwidth -> ");
+        wide = input.nextFloat();
+        area = equalLengths*wide ;
+        return area;
+    }
+
+    private static double countPerimeter(Scanner input) {
+        double number1;
+        double number2;
+        double number3;
+        double perimeter;
+        System.out.println(" Enter Side1 -> ");
+        number1 = input.nextFloat();
+        System.out.println(" Enter Side2 -> ");
+        number2 = input.nextFloat();
+        System.out.println(" Enter Side3 -> ");
+        number3 = input.nextFloat();
+        perimeter = number1 + number2 + number3;
+        return perimeter;
+    }
     
-    
+}
+   
