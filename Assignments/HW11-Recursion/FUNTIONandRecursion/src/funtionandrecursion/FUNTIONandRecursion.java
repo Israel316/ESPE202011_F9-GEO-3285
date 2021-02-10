@@ -94,7 +94,7 @@ Scanner input = new Scanner(System.in);
         float magnitude;
         System.out.println(" Amplitude -> ");
         scope = input.nextFloat();
-        System.out.println(" Time of varation -> ");
+        System.out.println(" Time of change -> ");
         timechange = input.nextFloat();
         magnitude = (float)(Math.log10(scope)+
                 3 * Math.log10(8 * timechange)-2.85);
@@ -105,15 +105,30 @@ Scanner input = new Scanner(System.in);
         double equalLengths;
         double wide;
         double area;
+        return valuesArea(input);
+    }
+
+    private static double valuesArea(Scanner input) {
+        double equalLengths;
+        double wide;
+        double area;
         System.out.println(" Enter distances -> ");
         equalLengths = input.nextFloat();
-        System.out.println(" Enter Bandwidth -> ");
+        System.out.println(" Enter wide -> ");
         wide = input.nextFloat();
         area = equalLengths*wide ;
         return area;
     }
 
     private static double countPerimeter(Scanner input) {
+        double number1;
+        double number2;
+        double number3;
+        double perimeter;
+        return perimeterValues(input);
+    }
+
+    private static double perimeterValues(Scanner input) {
         double number1;
         double number2;
         double number3;
