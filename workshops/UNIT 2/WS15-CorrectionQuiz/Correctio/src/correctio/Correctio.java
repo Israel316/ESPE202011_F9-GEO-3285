@@ -19,30 +19,30 @@ public class Correctio {
     public static void main(String[] args) {
         // TODO code application logic here
  
-        int totalOfPlayers = 0;
-        String[] players;
-        float[] goalAverages;
+        int animalsWithWeight = 0;
+        String[] animals;
+        float[] weight;
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Plase Enter the amount of player you want to record ->");
-        totalOfPlayers = scanner.nextInt();
+        System.out.println("Plase Enter the weight of animal->");
+        animalsWithWeight = scanner.nextInt();
 
-        players = new String[totalOfPlayers];
-        goalAverages = new float[totalOfPlayers];
+        animals = new String[animalsWithWeight];
+        weight = new float[animalsWithWeight];
 
-        for (int i = 0; i < totalOfPlayers; i++) {
+        for (int i = 0; i < animalsWithWeight; i++) {
             scanner.nextLine();
-            System.out.println("Please Enter the name of player #" + i + " ->");
-            players[i] = scanner.nextLine();
-            System.out.println("Please enter " + players[i] + "goals average ->");
-            goalAverages[i] = scanner.nextFloat();
+            System.out.println("Please Enter the name of animal #" + i + " ->");
+            animals[i] = scanner.nextLine();
+            System.out.println("Please enter " + animals[i] + "goals average ->");
+            weight[i] = scanner.nextFloat();
         }
 
-        System.out.println(" Player -> \t   goal average  ");
+        System.out.println(" Animal -> \t   Weight  ");
 
-        for (int i = 0; i < totalOfPlayers; i++) {
-            System.out.println(players[i] + " -> \t" + goalAverages[i]);
+        for (int i = 0; i < animalsWithWeight; i++) {
+            System.out.println(animals[i] + " -> \t" + weight[i]);
         }
 
     }
