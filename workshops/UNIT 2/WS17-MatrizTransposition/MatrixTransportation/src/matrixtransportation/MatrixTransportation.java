@@ -16,7 +16,7 @@ public class MatrixTransportation {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       float [][] a;
+   float [][] a;
         float [][] b;
         float [][] t;
         float [][] c;
@@ -38,7 +38,7 @@ public class MatrixTransportation {
         
         t=new float[n][m];
         
-         System.out.println("------Enter the elements of the matrix-------");
+         System.out.println("Enter the elements of the matrix");
          
          a=readMatrixElements(m, n, "A",input);
          b=readMatrixElements(m, n, "A",input);
@@ -164,4 +164,6 @@ public class MatrixTransportation {
                 }
             }
         }
-        
+        System.out.println("");
+    }
+}
