@@ -16,28 +16,25 @@ public class Typesofmatrices {
      */
     public static void main(String[] args) {
         
+       
+        String[] typesOfMeasure = {"Decimeters", "Meters","Decameters","Hectometers","Kilometers"};
 
-        String[] typesOfMatrices = {"Null", "scalar","identity","symmetrical","square"};
-
-        String[] valueOfMatrices = {"3x3", "2x2", "4x4"};
+        String[] valueInCentimeter = {"10cm", "100cm", "1000cm", "10000cm", "100000cm"};
         
-        String[] operationsWithMatrices = {"additions", "subtraction", "multiplicated"};
+       
         
 
-        System.out.println("Types of Matrices");
-        for (String typesOfMatricess : typesOfMatrices) {
-            System.out.println("Types of Matrices -->  " + typesOfMatricess);
+        System.out.println("Types of Measure");
+        for (String typesOfMeasures : typesOfMeasure) {
+            System.out.println("Types of Measure -->  " + typesOfMeasures);
         }
 
         System.out.println("");
-        System.out.println("value of matrices");
-        for (String valueOfMatricess : valueOfMatrices) {
-            System.out.println("value of matricess -->  " + valueOfMatricess);
+        System.out.println("value in Centimeter");
+        for (String valueInCentimeters : valueInCentimeter) {
+            System.out.println("value in Centimeter-->  " + valueInCentimeters);
         }
-        System.out.println("operations with Matrices");
-        for (String operationsWithMatricess :operationsWithMatrices ) {
-            System.out.println("ground Transportation Mean -->  " + operationsWithMatricess);
+        
     }
 
  }
-}
