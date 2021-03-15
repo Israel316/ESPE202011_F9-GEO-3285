@@ -34,9 +34,7 @@ public class MatrixOperation {
                 System.out.print("Row " + (i + 1) + " Column " + (j + 1) + " = ");
                 MatrizA[i][j] = scanner.nextInt();
             }
-            System.out.println("------------------------------");
-        System.out.println("------------------------------");
-        System.out.println("------------------------------");
+        
         }
 
         System.out.println("enter matrix B values:");
@@ -49,9 +47,7 @@ public class MatrixOperation {
                 System.out.print("Row " + (i + 1) + " Column " + (j + 1) + " = ");
                 MatrizB[i][j] = scanner.nextInt();
             }
-            System.out.println("------------------------------");
-        System.out.println("------------------------------");
-        System.out.println("------------------------------");
+         
         }
 
         System.out.println("enter matrix:");
@@ -68,9 +64,6 @@ public class MatrixOperation {
                 if (j == 2) {
                     System.out.println("");
                 }
-        System.out.println("------------------------------");
-        System.out.println("------------------------------");
-        System.out.println("------------------------------");
             }
         }
         System.out.println("MATRIX B");
@@ -102,7 +95,19 @@ public class MatrixOperation {
                 if (j == 2) {
                     System.out.println("");
                 }
-
+            }
+        }
+      System.out.println("the addition matrix is: ");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if ((MatrizA[i][j] - MatrizB[i][j]) < 10) {
+                    System.out.print(MatrizA[i][j] + MatrizB[i][j] + "  ");
+                } else {
+                    System.out.print(MatrizA[i][j] + MatrizB[i][j] + " ");
+                }
+                if (j == 2) {
+                    System.out.println("");
+                }
             }
         }
     }

@@ -84,6 +84,8 @@ public class MatrixFuntion {
                 }
                 if (j == 2) {
                     System.out.println("");
+                    
+                    
                 }
 
             }
